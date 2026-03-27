@@ -1,0 +1,61 @@
+
+        /* Basic styling to keep the UI clean and simple */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            /* Center the container within the viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1 {
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 500px;
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        /* Style the file input: hide the default and use a custom label */
+        input[type="file"] {
+            display: none;
+        }
+        /* Label styled as a plus icon button */
+        label[for="imageInput"] {
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            border: 2px dashed #bbb;
+            border-radius: 4px;
+            line-height: 80px;
+            font-size: 48px;
+            font-weight: normal;
+            color: #888;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        label[for="imageInput"]:hover {
+            background-color: #f0f0f0;
+            color: #555;
+        }
+        /* Result paragraphs styling */
+        p {
+            margin: 6px 0;
+            font-size: 13px;
+            color: #555;
+        }
+        /* Preview image styling */
+        #preview {
+            display: none;
+            max-width: 100%;
+            margin: 10px auto;
+            border-radius: 4px;
+        }
